@@ -614,6 +614,7 @@ nav .navbar-menu .navbar-item {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 170px;
+    margin-top: 4px;
     height: auto; }
 
 #open-mobile-menu {
