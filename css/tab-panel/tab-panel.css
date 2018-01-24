@@ -1,0 +1,145 @@
+/* BODY variables */
+/* content variables */
+/* BODY variables */
+/* content variables */
+/*.example{
+  padding: 10px;
+  @include themify {
+    background: theme-get(bg-color);
+    color: theme-get(text-color-white);
+  }
+}*/
+/* mixin for multiline text */
+.tab-panel {
+  background-color: #ffffff; }
+  .tab-panel .tab-panel__description {
+    font-size: 1.175rem;
+    color: #737373;
+    font-weight: 500;
+    padding: 30px; }
+    .tab-panel .tab-panel__description .text-blue {
+      color: #309DF0; }
+    .tab-panel .tab-panel__description .text-orange {
+      color: #FD7823; }
+    .tab-panel .tab-panel__description p {
+      margin: 0; }
+  .tab-panel .tab-panel__top-menu {
+    border-top: 1px solid #EBEFF2;
+    border-bottom: 1px solid #EBEFF2;
+    background-color: #F5F8FA; }
+    @media only screen and (max-width: 1067px) {
+      .tab-panel .tab-panel__top-menu.visible-tablet {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+    .tab-panel .tab-panel__top-menu .tab-panel__top-menu-item {
+      padding: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-family: 'Lato-Bold', sans-serif;
+      color: #888A8B;
+      font-size: .875rem; }
+      .tab-panel .tab-panel__top-menu .tab-panel__top-menu-item.is-active {
+        color: #4D575E; }
+  .tab-panel .tab-panel__tabs .divider {
+    margin: 0; }
+  .tab-panel .tab-panel__tabs .tab-panel__tab-item {
+    position: relative; }
+    .tab-panel .tab-panel__tabs .tab-panel__tab-item:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #F3F3F4; }
+    .tab-panel .tab-panel__tabs .tab-panel__tab-item.is-active > a, .tab-panel .tab-panel__tabs .tab-panel__tab-item:hover > a, .tab-panel .tab-panel__tabs .tab-panel__tab-item:focus > a, .tab-panel .tab-panel__tabs .tab-panel__tab-item:active > a {
+      border: 1px solid #BCC4CF;
+      border-left: none;
+      border-radius: 0 4px 4px 0;
+      background-color: #F5F7FA;
+      width: calc(100% + 10px);
+      -webkit-transition: .5s all;
+      transition: .5s all;
+      padding-left: 30px; }
+      .tab-panel .tab-panel__tabs .tab-panel__tab-item.is-active > a .trade-info .message-status, .tab-panel .tab-panel__tabs .tab-panel__tab-item:hover > a .trade-info .message-status, .tab-panel .tab-panel__tabs .tab-panel__tab-item:focus > a .trade-info .message-status, .tab-panel .tab-panel__tabs .tab-panel__tab-item:active > a .trade-info .message-status {
+        background-color: #D3D3D3; }
+      .tab-panel .tab-panel__tabs .tab-panel__tab-item.is-active > a .trade-info .buyer-username, .tab-panel .tab-panel__tabs .tab-panel__tab-item:hover > a .trade-info .buyer-username, .tab-panel .tab-panel__tabs .tab-panel__tab-item:focus > a .trade-info .buyer-username, .tab-panel .tab-panel__tabs .tab-panel__tab-item:active > a .trade-info .buyer-username {
+        color: #5D7495; }
+      .tab-panel .tab-panel__tabs .tab-panel__tab-item.is-active > a .trade-info .payment-method, .tab-panel .tab-panel__tabs .tab-panel__tab-item:hover > a .trade-info .payment-method, .tab-panel .tab-panel__tabs .tab-panel__tab-item:focus > a .trade-info .payment-method, .tab-panel .tab-panel__tabs .tab-panel__tab-item:active > a .trade-info .payment-method {
+        color: #2A2A33;
+        font-weight: 500; }
+      .tab-panel .tab-panel__tabs .tab-panel__tab-item.is-active > a .trade-info .amount, .tab-panel .tab-panel__tabs .tab-panel__tab-item:hover > a .trade-info .amount, .tab-panel .tab-panel__tabs .tab-panel__tab-item:focus > a .trade-info .amount, .tab-panel .tab-panel__tabs .tab-panel__tab-item:active > a .trade-info .amount {
+        color: #2A2A33; }
+    .tab-panel .tab-panel__tabs .tab-panel__tab-item > a {
+      display: block;
+      padding: 20px;
+      -webkit-transition: .5s all;
+      transition: .5s all;
+      border: 1px solid transparent;
+      border-left: none;
+      width: calc(100%);
+      text-decoration: none;
+      z-index: 2; }
+      .tab-panel .tab-panel__tabs .tab-panel__tab-item > a > .grid {
+        z-index: 1;
+        pointer-events: none; }
+      .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .trade-info {
+        padding-left: 20px;
+        position: relative;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 calc(100% - 70px);
+                flex: 0 0 calc(100% - 70px);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .trade-info .message-status {
+          background-color: #9B9B9B;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 4px; }
+          .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .trade-info .message-status.is-shown {
+            background-color: #57D1C2; }
+        .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .trade-info .buyer-username {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #888A8B;
+          margin-bottom: 10px; }
+          .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .trade-info .buyer-username .name {
+            font-weight: 500; }
+        .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .trade-info .payment-method {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: #1D1D26;
+          margin-bottom: 5px; }
+        .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .trade-info .amount {
+          font-size: .875rem;
+          color: #888A8B;
+          text-transform: uppercase; }
+      .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .paid-status {
+        width: 70px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 70px;
+                flex: 0 0 70px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .paid-status .paid-status-text {
+          color: #888A8B;
+          font-size: .875rem;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-family: 'Lato-Bold', sans-serif;
+          margin-top: 10px; }
+          .tab-panel .tab-panel__tabs .tab-panel__tab-item > a .paid-status .paid-status-text.is-paid {
+            color: #45C179; }

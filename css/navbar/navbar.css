@@ -1,0 +1,148 @@
+.navbar-item,
+.navbar-link {
+  display: block;
+  padding: 0.6rem 1rem; }
+
+.navbar-item a,
+.navbar-link a {
+  color: #fff;
+  line-height: 1.2;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.175rem;
+  margin: 0; }
+  @media only screen and (min-width: 768px) and (max-width: 930px) {
+    .navbar-item a,
+    .navbar-link a {
+      font-size: 80%; } }
+  .navbar-item a:hover, .navbar-item a.is-active,
+  .navbar-link a:hover,
+  .navbar-link a.is-active {
+    text-decoration: underline;
+    text-shadow: 0 0 0 #fff; }
+
+.navbar-item a,
+.navbar-link a {
+  text-decoration: none; }
+
+.navbar-menu {
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+  -webkit-box-shadow: 0 0 2px rgba(127, 127, 127, 0.2);
+          box-shadow: 0 0 2px rgba(127, 127, 127, 0.2); }
+
+.navbar-menu a.navbar-item, .navbar-menu .navbar-link {
+  text-transform: uppercase; }
+
+.navbar-menu a.navbar-item:hover, .navbar-menu a.navbar-item.is-active,
+.navbar-menu .navbar-link:hover,
+.navbar-menu .navbar-link.is-active {
+  color: #fff; }
+
+nav .navbar-menu .navbar-item {
+  padding: 15px 30px;
+  color: #111111;
+  border-right: 1px solid #ececec;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  nav .navbar-menu .navbar-item.is-active, nav .navbar-menu .navbar-item:hover {
+    background-color: #f4f9fb;
+    cursor: pointer; }
+    nav .navbar-menu .navbar-item.is-active a, nav .navbar-menu .navbar-item:hover a {
+      font-weight: 500;
+      text-decoration: none; }
+  nav .navbar-menu .navbar-item.is-active {
+    -webkit-box-shadow: inset 0 1px 2px #7f7f7f;
+            box-shadow: inset 0 1px 2px #7f7f7f; }
+  nav .navbar-menu .navbar-item:last-child {
+    padding-right: 30px; }
+  nav .navbar-menu .navbar-item a {
+    color: #111111;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  nav .navbar-menu .navbar-item .status {
+    font-size: .85rem;
+    text-decoration: underline; }
+
+.navbar-menu .navbar-item a.bages .bage-wrapper {
+  position: relative; }
+
+.navbar-menu .navbar-item a.bages {
+  position: relative; }
+  .navbar-menu .navbar-item a.bages .bage {
+    position: absolute;
+    top: -11px;
+    left: 100%;
+    display: inline-block;
+    border-radius: 10px;
+    height: 20px;
+    line-height: 16px;
+    text-align: center;
+    padding: 2px 7px;
+    background-color: #FD7823;
+    color: #fff;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px; }
+  .navbar-menu .navbar-item a.bages.bages-icon .bage {
+    left: calc(100% - 9px); }
+
+.navbar-item {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+@media screen and (min-width: 1068px) {
+  .navbar, nav,
+  .navbar-start,
+  .navbar-end {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .navbar .navbar-item:last-child,
+    .navbar .navbar-link:last-child, nav .navbar-item:last-child,
+    nav .navbar-link:last-child,
+    .navbar-start .navbar-item:last-child,
+    .navbar-start .navbar-link:last-child,
+    .navbar-end .navbar-item:last-child,
+    .navbar-end .navbar-link:last-child {
+      padding-right: 0; }
+  .navbar-item,
+  .navbar-link {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .navbar-burger {
+    display: none; }
+  .navbar-menu {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+  .navbar-start {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: auto; }
+  .navbar-end {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: auto; } }
