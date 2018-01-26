@@ -41,7 +41,7 @@ function initChat() {
             '<div class="grid grid--1of2 message-box">' +
             '<div class="grid-cell">' +
             '<p class="message">' + localData[i].text + '</p>' +
-            '<div class="publish-time"><span>' + localData[i].dateTime + '</span><span>pm</span></div>' +
+            '<div class="publish-time"><span>' + localData[i].dateTime + '</span></div>' +
             '</div>' +
             '<div class="grid-cell avatar">' +
             '<i class="icon icon-circle user-icon"></i>' +
@@ -94,33 +94,6 @@ function initChat() {
 initChat();
 
 
-
-// var activePane = document.querySelector('.tab-pane.is-active-mobile'),
-//     currentTabControl = activePane.querySelector('.control-tabs'),
-//     showMessagesBtn = currentTabControl.querySelector('.show-messages-btn'),
-//     showTradeInfoBtn = currentTabControl.querySelector('.show-trades-info-btn');
-//
-//
-//
-// showMessagesBtn.addEventListener(eventtype, function () {
-//     var self = this;
-//     if (this.classList.contains('.is-active')) {
-//         // do nothing
-//     } else {
-//         self.classList.remove('is-active');
-//         self.closest('.control-tabs').querySelector('.show-trades-nfo-btn').classList.add('is-active');
-//     }
-// });
-//
-// showTradeInfoBtn.addEventListener(eventtype, function () {
-//     var self = this;
-//     if (self.classList.contains('is-active')) {
-//         // do nothing
-//     } else {
-//         self.classList.remove('is-active');
-//         self.closest('.control-tabs').querySelector('.show-messages-btn').classList.add('is-active');
-//     }
-// });
 
 (function() {
 
@@ -261,63 +234,6 @@ function jsTabs(tabsContainerClass, openedItem) {
 // }
 // window.addEventListener('load', initMobTabs);
 // window.addEventListener('resize', initMobTabs);
-
-// function tabNav() {
-//     // store tabs variable
-//     var tabs = document.querySelectorAll('.tab-panel__tabs > .tab-panel__tab-item');
-//
-//     function myTabClicks(tabClickEvent) {
-//
-//         var clickedTab = tabClickEvent.currentTarget,
-//             anchorReference = tabClickEvent.target,
-//             activePaneId = anchorReference.getAttribute('href'),
-//             activePane = document.querySelector(activePaneId),
-//             contentPanes = document.querySelectorAll('.tab-pane');
-//
-//         for (var i = 0; i < tabs.length; i++) {
-//             tabs[i].classList.remove('is-active');
-//         }
-//
-//         clickedTab.classList.add('is-active');
-//         tabClickEvent.preventDefault();
-//
-//         for (i = 0; i < contentPanes.length; i++) {
-//             contentPanes[i].classList.remove('is-active');
-//             if (window.innerWidth <= 1068) {
-//                 contentPanes[i].classList.remove('is-active-mobile');
-//             }
-//         }
-//
-//         activePane.classList.add('is-active');
-//         if (window.innerWidth <= 1068) {
-//             activePane.classList.add('is-active-mobile');
-//             if (activePane.classList.contains('is-active-mobile')) {
-//                 activePane.querySelector('.control-tabs').classList.add('activate-control-tabs');
-//                 var onceActivatedControlTabs = (function() {
-//                     var executed = false;
-//                     return function() {
-//                         if (!executed) {
-//                             executed = true;
-//                             jsTabs('.activate-control-tabs', 1);
-//                         }
-//                     };
-//                 })();
-//                 setTimeout(function () {
-//                     onceActivatedControlTabs();
-//                 }, 300)
-//             } else {
-//                 activePane.querySelector('.control-tabs').classList.remove('activate-control-tabs');
-//             }
-//         }
-//     }
-//
-//     for (var i = 0; i < tabs.length; i++) {
-//         tabs[i].addEventListener('click', myTabClicks)
-//     }
-// }
-//
-// window.addEventListener('load', tabNav);
-// window.addEventListener('resize', tabNav);
 
 (function(){
     function onTabClick(event){
