@@ -283,13 +283,13 @@ function jsTabs(tabsContainerClass, openedItem) {
 //
 //         for (i = 0; i < contentPanes.length; i++) {
 //             contentPanes[i].classList.remove('is-active');
-//             if (window.innerWidth <= 767) {
+//             if (window.innerWidth <= 1068) {
 //                 contentPanes[i].classList.remove('is-active-mobile');
 //             }
 //         }
 //
 //         activePane.classList.add('is-active');
-//         if (window.innerWidth <= 767) {
+//         if (window.innerWidth <= 1068) {
 //             activePane.classList.add('is-active-mobile');
 //             if (activePane.classList.contains('is-active-mobile')) {
 //                 activePane.querySelector('.control-tabs').classList.add('activate-control-tabs');
@@ -340,7 +340,7 @@ function jsTabs(tabsContainerClass, openedItem) {
         for (var i=0; i < actives.length; i++){
             actives[i].className = actives[i].className.replace('is-active', '');
         }
-        if (window.innerWidth <= 767) {
+        if (window.innerWidth <= 1068) {
             for (var j=0; j < contentPanes.length; j++){
                 contentPanes[j].className = contentPanes[j].className.replace('is-active-mobile', '');
             }
@@ -349,7 +349,7 @@ function jsTabs(tabsContainerClass, openedItem) {
         // activate new tab and panel
         event.target.parentElement.className += ' is-active';
         document.getElementById(activePaneId.split('#')[1]).className += ' is-active';
-        if (window.innerWidth <= 767) {
+        if (window.innerWidth <= 1068) {
             activePane.classList.add('is-active-mobile');
             if (activePane.classList.contains('is-active-mobile')) {
                 activePane.querySelector('.control-tabs').classList.add('activate-control-tabs');

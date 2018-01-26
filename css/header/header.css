@@ -16,7 +16,7 @@
 
 #logo {
   overflow: hidden; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1067px) {
     #logo {
       height: 30px;
       width: auto; } }

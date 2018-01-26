@@ -20,13 +20,18 @@
       display: -ms-flexbox;
       display: flex;
       background-color: #fff; }
-      @media only screen and (max-width: 767px) {
-        .tab-content .tab-pane.is-active .chat-room.is-active, .tab-content .tab-pane.is-active .trade-info.is-active {
+      @media only screen and (max-width: 1067px) {
+        .tab-content .tab-pane.is-active .trade-info.is-active {
           display: block; } }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 1067px) {
+        .tab-content .tab-pane.is-active .chat-room.is-active {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
+      @media only screen and (max-width: 1067px) {
         .tab-content .tab-pane.is-active {
           display: none; } }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 1067px) {
         .tab-content .tab-pane.is-active.is-active-mobile {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -78,6 +83,16 @@
             -ms-flex-align: center;
                 align-items: center;
         opacity: .2; }
+        @media only screen and (max-width: 1067px) {
+          .tab-content .tab-pane .control-tabs .control-tabs__item {
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; } }
+        @media only screen and (max-width: 767px) {
+          .tab-content .tab-pane .control-tabs .control-tabs__item {
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end; } }
         .tab-content .tab-pane .control-tabs .control-tabs__item:hover, .tab-content .tab-pane .control-tabs .control-tabs__item:active, .tab-content .tab-pane .control-tabs .control-tabs__item:focus {
           cursor: pointer; }
         .tab-content .tab-pane .control-tabs .control-tabs__item.is-active {
@@ -97,7 +112,7 @@
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 1067px) {
         .tab-content .tab-pane .chat-room {
           display: none;
           padding: 0;
@@ -122,7 +137,7 @@
         padding: 15px 80px 30px;
         position: relative;
         text-align: center; }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1067px) {
           .tab-content .tab-pane .chat-room .chat-room__header {
             padding: 0 60px 15px; } }
         .tab-content .tab-pane .chat-room .chat-room__header:after {
@@ -137,7 +152,7 @@
           position: absolute;
           left: 5px;
           top: 15px; }
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1067px) {
             .tab-content .tab-pane .chat-room .chat-room__header .button-edit {
               left: 0;
               top: 0; } }
@@ -145,7 +160,7 @@
           position: absolute;
           right: 5px;
           top: 15px; }
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1067px) {
             .tab-content .tab-pane .chat-room .chat-room__header .button-remove {
               right: 0;
               top: 0; } }
@@ -154,21 +169,21 @@
           font-weight: 500;
           margin: 0 0 10px;
           color: #4D575E; }
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1067px) {
             .tab-content .tab-pane .chat-room .chat-room__header .payment-method {
               font-size: 1.4rem; } }
         .tab-content .tab-pane .chat-room .chat-room__header .buyer-reputation .name {
           font-weight: 500;
           font-size: 1.4rem;
           color: #7A848C; }
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1067px) {
             .tab-content .tab-pane .chat-room .chat-room__header .buyer-reputation .name {
               font-size: 1.1rem; } }
         .tab-content .tab-pane .chat-room .chat-room__header .reputation-status {
           color: #7A848C;
           font-weight: 500;
           font-size: 1.4rem; }
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1067px) {
             .tab-content .tab-pane .chat-room .chat-room__header .reputation-status {
               font-size: 1.1rem; } }
       .tab-content .tab-pane .chat-room .message-container {
@@ -176,22 +191,26 @@
         -webkit-box-flex: 1;
             -ms-flex: 1 0 auto;
                 flex: 1 0 auto; }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1067px) {
           .tab-content .tab-pane .chat-room .message-container {
             padding: 175px 0 80px; } }
         .tab-content .tab-pane .chat-room .message-container .scrollable-area {
           max-height: 600px;
           overflow: hidden;
           overflow-y: auto; }
+          @media only screen and (max-width: 1067px) {
+            .tab-content .tab-pane .chat-room .message-container .scrollable-area {
+              height: calc(100vh - 250px);
+              max-height: none; } }
           @media only screen and (max-width: 767px) {
             .tab-content .tab-pane .chat-room .message-container .scrollable-area {
-              height: calc(100vh - 250px); } }
+              max-height: 600px; } }
         @media all and (min-width: 1600px) {
           .tab-content .tab-pane .chat-room .message-container .scrollable-area {
             max-height: 900px; } }
         .tab-content .tab-pane .chat-room .message-container .message-row {
           margin-bottom: 30px; }
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1067px) {
             .tab-content .tab-pane .chat-room .message-container .message-row {
               padding: 0 15px; } }
           .tab-content .tab-pane .chat-room .message-container .message-row > .grid-cell {
@@ -199,7 +218,7 @@
                 -ms-flex: none;
                     flex: none;
             width: calc(100% - 50px); }
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 1067px) {
               .tab-content .tab-pane .chat-room .message-container .message-row > .grid-cell {
                 width: 100%; } }
           .tab-content .tab-pane .chat-room .message-container .message-row .message-box .publish-time {
@@ -266,8 +285,7 @@
         position: relative;
         border: 1px solid #DADFE8;
         background-color: #fff;
-        min-height: 60px;
-        height: auto;
+        height: 60px;
         padding: 0 80px 0 60px;
         overflow: hidden; }
         .tab-content .tab-pane .chat-room .message-sender input, .tab-content .tab-pane .chat-room .message-sender button {
@@ -282,7 +300,8 @@
                   box-shadow: none;
           border: none;
           padding: 19px 0;
-          line-height: 1.4; }
+          line-height: 1.4;
+          resize: none; }
         .tab-content .tab-pane .chat-room .message-sender .upload-file {
           position: absolute;
           padding: 0 15px;
@@ -313,8 +332,10 @@
           z-index: 1; }
         .tab-content .tab-pane .chat-room .message-sender #message-text {
           width: 100%;
-          height: 100%; }
-          @media only screen and (max-width: 767px) {
+          height: 100%;
+          position: relative;
+          z-index: 2; }
+          @media only screen and (max-width: 1067px) {
             .tab-content .tab-pane .chat-room .message-sender #message-text {
               position: absolute;
               width: calc(100% - 130px);
@@ -339,7 +360,7 @@
           text-transform: uppercase;
           font-weight: 400;
           font-family: 'Lato-Bold', sans-serif; }
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 1067px) {
             .tab-content .tab-pane .chat-room .message-sender #send-message-btn {
               padding-right: 15px; } }
           .tab-content .tab-pane .chat-room .message-sender #send-message-btn:focus, .tab-content .tab-pane .chat-room .message-sender #send-message-btn:active {
@@ -347,10 +368,10 @@
   .tab-content .trade-info {
     padding: 20px;
     background-color: #fff; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1067px) {
       .tab-content .trade-info {
         display: none; } }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1067px) {
       .tab-content .trade-info.is-active {
         height: 100vh;
         overflow-y: auto;
@@ -386,7 +407,7 @@
                 flex-direction: column;
         height: 100px;
         overflow: hidden; }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1067px) {
           .tab-content .trade-info .trade-info-list .trade-info-list-item {
             height: 85px; } }
         .tab-content .trade-info .trade-info-list .trade-info-list-item:nth-child(2n) {
@@ -415,13 +436,13 @@
             color: #4A4A4A; }
     .tab-content .trade-info .trade-vertical-info-list {
       margin-top: 50px; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 1067px) {
         .tab-content .trade-info .trade-vertical-info-list {
           margin-top: 0; } }
       .tab-content .trade-info .trade-vertical-info-list .trade-info-list-item {
         padding: 20px 10px;
         border-bottom: 1px solid #EBEBEB; }
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1067px) {
           .tab-content .trade-info .trade-vertical-info-list .trade-info-list-item {
             padding: 15px; } }
         .tab-content .trade-info .trade-vertical-info-list .trade-info-list-item .title {
